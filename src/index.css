@@ -1,13 +1,268 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0px;
+  border: 0px
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.main{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(236, 236, 236, 0.342);
+  position: absolute;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.register-page{
+  width: 400px;
+  height: 80vh;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.445);
+  padding-top:20px ;
+}
+
+.register-page h2{
+  font-weight: 100;
+  font-size: 25px;
+  color: rgb(56, 56, 56);
+}
+
+.register-page form{
+  /* border: 1px solid; */
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+  text-align: left;
+  color: rgb(56, 56, 56);
+}
+
+.register-page form .form-group{
+  margin: 10px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.register-page form input{
+  width: 70%;
+}
+
+.register-page form button{
+  width: 100%;
+  margin-top:5px;
+}
+
+
+/* Login Page */
+.login-page{
+  width: 400px;
+  height: 80vh;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.445);
+  padding-top:20px ;
+}
+
+.login-page h2{
+  font-weight: 100;
+  font-size: 25px;
+  color: rgb(56, 56, 56);
+}
+
+.login-page form{
+  /* border: 1px solid; */
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+  text-align: left;
+  color: rgb(56, 56, 56);
+}
+
+.login-page form .form-group{
+  margin: 10px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-page form input{
+  width: 70%;
+}
+
+.login-page form button{
+  width: 100%;
+  margin-top:5px;
+}
+
+
+/* home */
+.home{
+  width: 400px;
+  height: 80vh;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.445);
+  padding-top:5px ;
+}
+
+/* navbar */
+.navbar{
+  border: 1px solid;
+  border-radius: 10px 10px 0px 0px;
+  width: 98%;
+  margin: auto;
+  background-color: white;
+}
+
+.navbar h4{
+  font-weight: 400;
+  font-size:18px;
+}
+
+.navbar button{
+  padding: 2px 5px;
+  font-size: 14px;
+  margin-left:5px;
+}
+
+
+/* All tasks */
+
+.tasks{
+  height:90%;
+  /* border: 2px solid red; */
+  overflow-y: scroll;
+}
+::-webkit-scrollbar { 
+  width: 1px; 
+} 
+.task{
+  border: 1px solid rgba(0, 0, 0, 0.267);
+  text-align: left;
+  width: 98%;
+  margin: auto;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgb(248, 248, 248);
+}
+
+/* add task */
+.addTask h2{
+  font-weight: 100;
+  font-size: 25px;
+  color: rgb(56, 56, 56);
+  margin-top: 50px;
+}
+
+.addTask form{
+  /* border: 1px solid; */
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+  text-align: left;
+  color: rgb(56, 56, 56);
+}
+
+.addTask form .form-group{
+  margin: 10px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.addTask form input {
+  width: 65%;
+}
+
+.addTask form textarea {
+  width: 65%;
+}
+
+.addTask form button{
+  width: 100%;
+  margin-top:15px;
+}
+
+/* task */
+.update{
+  /* border:1px solid; */
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.update button{
+  box-shadow: 1px 1px 6px rgba(128, 128, 128, 0.582);
+  padding: 0px 4px;
+  margin-left: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.11);
+}
+
+.update button:hover{
+  box-shadow: 1px 1px 5px transparent;
+  padding: 1px 5px;
+}
+
+
+/* edit area */
+.EditTask{
+  text-align: center;
+  padding-top:5px ;
+}
+
+.EditTask h2{
+  font-weight: 100;
+  font-size: 25px;
+  color: rgb(56, 56, 56);
+}
+
+.EditTask form{
+  /* border: 1px solid; */
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+  text-align: left;
+  color: rgb(56, 56, 56);
+}
+
+.EditTask form .form-group{
+  margin: 10px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.EditTask form input {
+  width: 65%;
+}
+
+.EditTask form textarea {
+  width: 65%;
+}
+
+.EditTask form button{
+  width: 100%;
+  margin-top:15px;
+}
+
+.updateCancel{
+  display: flex;
+  gap: 10px;
+}
+
+.updateCancel .btn1{
+  flex:85%;
+}
+
+.updateCancel .btn2{
+  flex: 15%;
 }
